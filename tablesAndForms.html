@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang = "en-US">
+<head>
+    <title>Pizza Ordering Form</title>
+</head>
+<body>
+
+<form>
+<fieldset>
+    <h1>Pizza Ordering Form</h1>
+
+
+    <h2>Contact Information</h2>
+        <label>
+            Name:
+            <input type = "text" name = "name" required>
+        </label><br>
+        <label>
+            Phone:
+            <input type = "text" name = "phone" required>
+        </label><br>
+        <label>
+            Email:
+            <input type = "text" name = "email" required>
+        </label>
+
+
+    <h2>Select Pizza Size</h2>
+    <select name = "size" required>
+        <option value = "">--Select Size--</option>
+        <option value = "medium">Medium</option>
+        <option value = "large">Large</option>
+        <option value = "xl">XLarge</option>
+    </select>
+
+
+    <h2>Select Sauce</h2>
+    <label>
+        <input type = "radio" name = "sauce" value = "marinara" required>
+        Marinara
+    </label><br>
+    <label>
+        <input type = "radio" name = "sauce" value = "ranch" required>
+        Ranch
+    </label><br>
+    <label>
+        <input type = "radio" name = "sauce" value = "none" required>
+        No Sauce
+    </label>
+
+
+    <h2>Select Toppings</h2>
+    <label>
+        <input type = "checkbox" name = "toppings" value = "pepperoni">
+        Pepperoni
+    </label>
+    <label>
+        <input type = "checkbox" name = "toppings" value = "sausage">
+        Sausage
+    </label><br>
+    <label>
+        <input type = "checkbox" name = "toppings" value = "mushroom">
+        Mushroom
+    </label>
+    <label>
+        <input type = "checkbox" name = "toppings" value = "pineapple">
+        Pineapple
+    </label><br>
+    <label>
+        <input type = "checkbox" name = "toppings" value = "peppers">
+        Peppers
+    </label>
+    <label>
+        <input type = "checkbox" name = "toppings" value = "onions">
+        Onions
+    </label>
+
+
+    <h2>Additional Instructions</h2>
+
+    <textarea name = "instructions">
+Add instructions
+    </textarea><br>
+
+    <button type = "submit">Submit</button>
+
+<hr>List of My Favorite Games
+<table border = "1">
+    <tr>
+        <th>Developer</th>
+        <th>Title</th>
+        <th>Year</th>
+    </tr>
+
+     <tr>
+        <td rowspan ="3">FromSoftware</td>
+        <td>Dark Souls</td>
+        <td>2011</td>
+    </tr>
+    <tr>
+        <td>Dark Souls 3</td>
+        <td>2016</td>
+    </tr>
+    <tr>
+        <td>Elden Ring</td>
+        <td>2022</td>
+    </tr>
+
+    <tr>
+        <td>Hunt Showdown</td>
+    </tr>
+
+    
+
+</table>
+
+
+
+</fieldset>
+</form>
+</body>
+</html>
