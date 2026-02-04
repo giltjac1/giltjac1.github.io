@@ -1,0 +1,55 @@
+/*
+Requirements for the assignment:
+- Background color closely matches.
+- Header sizes closely match.
+- Top header is aligned correctly.
+- The 2nd paragraph closely matches, including the width, margin, padding,
+  border, and line-height.
+- The 4th and 5th paraghraphs closely match colors.
+- Link colors closely match
+- The link to w3schools.com is a different color htan the list item links.
+- List Items uses two digits.
+- The table header and cells have different backgrounds.
+- The table border applies to all cells, and the borders are overlapping.
+*/
+
+
+
+/*Background color is looks like it is lightblue.*/
+body {
+    background-color: lightblue;
+}
+
+/*Main headers looks like its centered, bold, and a different font..*/
+h1 {
+    text-align: center;
+    font-style: bold;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+#paragraph2 {
+    line-height: 2;
+    margin: 10px
+    background-color: white;
+    border: 5px solid green;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*The color of the w3schools.com link is red.*/
+
+/*The color of the paragragh outline is green*/
+
+/*The solid color background on the two paragraphs are dark blue*/
+
+/*table is grey at the top.*/
+
+
+
+
