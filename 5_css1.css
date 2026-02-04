@@ -23,30 +23,55 @@ body {
 /*Main headers looks like its centered, bold, and a different font..*/
 h1 {
     text-align: center;
-    font-style: bold;
+    font-style: bolder;
     font-family: sans-serif;
+    font-size: 50px;
 }
 
 h2 {
     font-family: sans-serif;
+    font-style: bolder;
+    font-size: 32px;
 }
 
+h3 {
+    font-size: 21px;
+}
+
+
+/*The color of the paragragh outline is green*/
 #paragraph2 {
-    line-height: 2;
-    margin: 10px
     background-color: white;
+    line-height: 2;
+    margin: 20px;
+    margin-right: 550px;
     border: 5px solid green;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.blue {
+    background-color: darkblue;
+    color: white;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 14.5px;
+    
+}
+
+ol {
+    text-align: left;
+    margin-left: -20px;
+    list-style-type: decimal-leading-zero;
+    
 }
 
 /*The color of the w3schools.com link is red.*/
-
-/*The color of the paragragh outline is green*/
-
-/*The solid color background on the two paragraphs are dark blue*/
+a[target] {
+    color: red;
+}
 
 /*table is grey at the top.*/
 
