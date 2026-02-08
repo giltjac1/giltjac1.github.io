@@ -1,0 +1,128 @@
+/*
+The colors, backgrounds, font sizes, line spacing, etc. for the different elements can be any.
+Here, the grade will be determined specifically by the achievement of the following:
+
+    1. The "jump menu" is positioned on the left, and spans the entire height of the page.
+    2. The "header" (e.g. MyBlog and buttons) is always on the top of the page, and they are unaffected by scrolling.
+    3. The "header" is centered appropriately, i.e. it does not count space behind the jump menu when centering.
+    4. The "thank you for visiting" block is always shown in the bottom-right of the page.
+    5. The journal articles are organized neatly in the main area of the page.
+    6. If the window resizes, the journal articles will be reorganized.
+
+HINTS:
+    1. Each journal article should have a fixed width, such as 300px.
+    2. The width of the jump menu affects the width of the header; it is possible to use percentage as a unit (e.g. 15%)
+
+*/
+
+body {
+    background-color: lightblue;
+}
+
+/*This sets the header into a fixed position.*/
+header{
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    Background-color: red;
+}
+/*Positions the header to the center.*/
+header p{
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+header nav button{
+    display: flex 1;
+    background-color: gray;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jumpMenu{
+    position: fixed;
+    display: flex 1;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100vh;
+    background-color: orange;
+}
+
+#jumpMenu h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+#jumpMenu a{
+    flex-shrink: 0;
+    white-space: nowrap;
+    text-align: center;
+    display: block;
+    margin: 13px 0;
+}
+
+main{
+    margin-left: 15%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+main h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+    margin-left: 5%;
+    padding-top: 50px;
+}
+
+article{
+    width: 300px;
+    text-align: justify;
+}
+
+article h2{
+    margin-top: 0;
+}
+
+/*Changes the size of the thank you message*/
+#thanks{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+    background-color: purple;
+    font-size: 30px;
+    padding: 25px;
+    margin: 0;
+    
+}
