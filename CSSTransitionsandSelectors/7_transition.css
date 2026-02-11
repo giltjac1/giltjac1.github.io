@@ -15,9 +15,7 @@ Assignment Tasks:
         the font color and background color change.
 */
 
-body {
-    background-color: lightblue;
-}
+
 
 main header{
     position: fixed;
@@ -35,14 +33,14 @@ main header p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/*This is the "MyBlog.com" Header*/
+/*This is the "MyBlog.com" Header.*/
 main header{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/*This is the left side menu buttons*/
+/*This is the left side menu buttons.*/
 #menuItems button{
     background-color: gray;
     font-size: 20px;
@@ -62,6 +60,7 @@ main header{
     border-width: 1px 1px 100vh 1px;
 }
 
+/*This is the drop down menu.*/
 #jumpMenu{
     margin: 0px;
     min-width: 189px;
@@ -71,24 +70,22 @@ main header{
     transition: max-height 0.5s ease;
 }
 
+/*This changes the size of the drop down menu when it is hovered over.*/
 #recentArticles:hover + #jumpMenu, #jumpMenu:hover{
     max-height: 400px;
-
 }
 
-
-
+/*This changes the font of the items in the drop down menu to black and the background color of each item to purple when
+  when hovered over.*/
 #jumpMenu a:hover{
     color: black;
     background-color: purple;
 }
 
+/*This changes the color of the left menu buttons when hovered over.*/
 #menuItems button:hover{
     background-color: aqua;
 }
-
-
-
 
 #container{
     display: flex;
@@ -96,7 +93,25 @@ main header{
     gap: 40px;
     justify-content: flex-start;
     margin-left: 5%;
-    padding-top: 50px;
+    padding-top: 30px;
+    color: #aaa;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+#container article:hover{
+    color: black;
+    font-size: 20px;
+}
+
+#container article p:first-of-type::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#container p{
+    font-size: 15px;
 }
 
 main{
@@ -112,7 +127,7 @@ main h1{
     text-align: center;
     font-size: 40px;
     margin-bottom: 10px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 article{
@@ -122,6 +137,14 @@ article{
 
 article h2{
     margin-top: 0;
+}
+
+article a[href*="google.com"]::after{
+    content:"";
+    display: inline-block;
+    background-image: url("arrow.png");
+    background-size: contain;
+
 }
 
 /*Changes the size of the thank you message*/
