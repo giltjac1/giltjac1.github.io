@@ -1,0 +1,140 @@
+/*
+Assignment Tasks:
+    1. The first letter of an article's main text receives Times New Roman font, with 36px size.
+        The "Read More" is unaffected.
+    2. Each link that points to Google (i.e. the "Read More" links) each display the following arrowarrow.png to the right of it.
+        Note: this arrow was sourced from Wikipedia.
+    3. Each article begins with lightly-colored text;
+        when the user moves their cursor over it, the text becomes darker and the article expands. 
+        This should occur over 2 seconds.
+    4. When the user moves their cursor away from an article, it should go back to the way it originally was.
+        This should occur over 2 seconds.
+    5. When the user moves their cursor over a navigation button, the background color changes.
+    6. When the user moves their cursor over the "Recent Articles" navigation button, a list of links to the articles appears.
+    7. When the user moves their cursor over a link in the list from the previous requirement,
+        the font color and background color change.
+*/
+
+body {
+    background-color: lightblue;
+}
+
+main header{
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    Background-color: red;
+}
+
+/*Positions the "MyBlog.com" Header to the center.*/
+main header p{
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*This is the "MyBlog.com" Header*/
+main header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*This is the left side menu buttons*/
+#menuItems button{
+    background-color: gray;
+    font-size: 20px;
+    padding: 10px 59px 10px 59px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*This positions the left side menu and has the border go to the bottom of the page.*/
+#menuItems{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px 1px 100vh 1px;
+}
+
+#jumpMenu{
+    
+    min-width: 189px;
+    background-color: orange;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+#recentArticles:hover + #jumpMenu, #jumpMenu:hover{
+    max-height: 400px;
+
+}
+
+
+
+#jumpMenu a:hover{
+    color: black;
+    background-color: purple;
+}
+
+#menuItems button:hover{
+    background-color: aqua;
+}
+
+
+
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+    margin-left: 5%;
+    padding-top: 50px;
+}
+
+main{
+    margin-left: 15%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+main h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+article{
+    width: 300px;
+    text-align: justify;
+}
+
+article h2{
+    margin-top: 0;
+}
+
+/*Changes the size of the thank you message*/
+#thanks{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+    background-color: purple;
+    font-size: 30px;
+    padding: 25px;
+    margin: 0;
+    
+}
+
+
+
