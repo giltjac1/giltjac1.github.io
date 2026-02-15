@@ -4,17 +4,7 @@
     <link rel="stylesheet" href="resumeResponsiveCSS.css">
 </head>
 
-<!--The website must depict a resume about the student, containing the following features:
-    2. Professional objective statement
-    
-    3. Education
-
-    4. Relevant Work Experience (if no work experience, leave out)
-    
-    5. Projects
-    
-    6. Skills
-    
+<!--
     In addition to the main resume page, the website must have 2 additional pages; each will be dedicated to a unique Project.
     Here, the student can choose any 2 projects from any classes they have had in the past, or personal projects they would like to display.
     Each project page should include the following:
@@ -25,22 +15,84 @@
 
     The website’s structure must appropriately use semantic HTML tags; it must minimize the use of non-semantic HTML tags.
 -->
-
-
     <body>
         <header>
             <nav>
-                <button href="resumeProject1.html">Project 1</button>
-                <button href="resumeProject2.html">Project 2</button>
+                <a href="#objStatement"><button>Objective Statement</button></a>
+                <a href="#education"><button>Education</button></a>
+                <a href="#shadowExperience"><button>Shadow Experience</button></a>
+                <a href="#projects"><button>Projects</button></a>
+                <a href="#skills"><button>Skills</button></a>
             </nav>
         </header>
 
         <!--Full name, UCF email address, and link to LinkedIn profile.-->
         <h1>Jacob Giltner</h1>
         <p>ja352271@ucf.edu</p>
-        <a href="www.linkedin.com/in/jacob-giltner-b66282386">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jacob-giltner-b66282386">LinkedIn</a>
+      
+        <main>
+            <section id="objStatement">
+                <h2>Objective Statement</h2>
+                <p>I am a student at the University of Central Florida finishing my degree in IT and I am seeking internships in IT-related fields</p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <article id="UCF">
+                    <ul>
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <li><p>University of Central Florida</p></li>
+                    </ul>    
+                </article>
+                <aricle id="valencia">
+                    <ul>
+                        <h3>Associate of Arts</h3>
+                        <li><p>Valencia College</p></li>
+                    </ul>
+                </aricle>
+            </section>
+
+            <section id="shadowExperience">
+                <h2>Shadow Experience</h2>
+                <article id="FDOT">
+                    <ul>
+                        <h3>Florida Department of Transportation</h3>
+                        <li><p>Toured the IT-Department and learned about their daily tasks and how to get into a starting position.</p></li>
+                        <li><p>I also learned alot about what FDOT does day to day and I learned about all the different roles that are offered at FDOT.</p></li>
+                    </ul>
+                </article>
+                <article id="JABIL">
+                    <ul>
+                        <h3>JABIL</h3>
+                        <li><p>I toured where they develop new thechnology, learned about resume tips and how to do well in an interview.</p></li>
+                    </ul>
+                </article>
+                
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="resumeProject1.html">Home-Lab project</a></li>
+                    <li><a href="resumeProject2.html">OS Management project</a></li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><p>Communication</p></li>
+                    <li><p>Problem-solving</p></li>
+                    <li><p>Time management</p></li>
+                    <li><p>Teamwork</p></li>
+                    <li><p>Basic proficiency in Microsoft Office</p></li>
+                    <li><p>Hard worker</p></li>
+                    <li><p>Customer Service Skills</p></li>
+                </ul>
+            </section>
 
 
-
+        </main>
     </body>
 </html>
